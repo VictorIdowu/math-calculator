@@ -1,0 +1,27 @@
+.align {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 600px !important;
+  margin-top: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.label {
+  margin: 0 !important;
+}
+
+.equal {
+  font-size: 2rem;
+  color: dimgrey;
+  font-weight: 700;
+}
