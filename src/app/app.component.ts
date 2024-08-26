@@ -47,7 +47,7 @@ export class AppComponent {
     return Math.floor(Math.random() * 10) + 1;
   }
 
-  submitAnswer(): void {
+  handleSubmit(): void {
     this.formSubmitted = true;
     if (this.form.valid) {
       const correctAnswer = this.firstNumber + this.secondNumber;
@@ -56,8 +56,8 @@ export class AppComponent {
         ? this.correctAttempts++
         : this.incorrectAttempts++;
 
-      this.formSubmitted = false;
       this.getQues();
+      this.formSubmitted = false;
     }
   }
 }

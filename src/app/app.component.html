@@ -17,15 +17,14 @@
         class="ui input huge field"
         [class.error]="
           (formSubmitted || form.controls['answer'].touched) &&
-          (form.controls['answer'].invalid ||
-            validateAns(form.controls['answer']))
+          form.controls['answer'].invalid
         "
       >
         <input
           type="number"
           placeholder="?"
           formControlName="answer"
-          (keyup.enter)="submitAnswer()"
+          (keyup.enter)="handleSubmit()"
         />
       </div>
     </div>
